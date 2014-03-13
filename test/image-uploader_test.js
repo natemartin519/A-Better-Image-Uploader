@@ -21,16 +21,3 @@ var imageUploader = require('../lib/image-uploader.js');
     test.doesNotThrow(block, [error], [message])
     test.ifError(value)
 */
-
-exports.imageUploader = {
-  setUp: function(done) {
-    // setup here
-    done();
-  },
-  'no args': function(test) {
-    test.expect(1);
-    // tests here
-    test.equal(imageUploader.awesome(), 'awesome', 'should be awesome.');
-    test.done();
-  }
-};
