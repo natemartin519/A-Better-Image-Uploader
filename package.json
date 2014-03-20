@@ -3,8 +3,6 @@
   "version": "0.0.0",
   "main": "lib/image-uploader.js",
   "description": "Yo it's Node uploading images!",
-  "homepage": "user/repo",
-  "bugs": "user/repo/issues",
   "author": {
     "name": "Nathan Martin",
     "email": "natemartin519@gmail.com"
