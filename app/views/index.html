@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>File Uploader</title>
 
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
     <style>
         body { margin-top: 20px; }
+
+        .js-hidden {
+            visibility: hidden;
+        }
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -18,18 +23,47 @@
     <![endif]-->
 </head>
 <body>
-    <div class="container well">
-        <form role="form" action="/upload" enctype="multipart/form-data" method="post">
-            <div class="form-group">
-                <label for="exampleInputFile">File input</label>
-                <input type="file" name="image" multiple="multiple">
+
+    <div class="container">
+        <div class="panel panel-default">
+
+            <div class="panel-heading">
+                <h3>Upload Image</h3>
             </div>
 
-            <button type="submit" class="btn btn-default">Submit</button>
-        </form>
+            <div class="panel-body">
+                <form id="imageForm" role="form" action="/upload" enctype="multipart/form-data" method="post">
+
+                    <div class="form-group">
+                        <input type="file" id="image" name="image">
+                    </div>
+
+                    <button type="submit" class="btn btn-default">Submit</button>
+
+                </form>
+            </div>
+
+        </div>
+
+        <div class="panel panel-default js-hidden">
+            <div class="panel-heading">
+                <h3>Images List</h3>
+            </div>
+
+            <div class="panel-body">
+                <ul id="imageList">
+                </ul>
+            </div>
+        </div>
     </div>
+
+    <script id="imageListTemplate" type="template">
+        <li><a href="./images/{{name}}">{{name}}</a></li>
+    </script>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
