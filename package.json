@@ -1,28 +1,24 @@
 {
   "name": "image-uploader",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "main": "lib/image-uploader.js",
-  "description": "Yo it's Node uploading images!",
+  "description": "Yo it's Node uploading images to S3!",
   "author": {
     "name": "Nathan Martin",
     "email": "natemartin519@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "user/repo"
+    "url": "natemartin519/A-Better-Image-Uploader"
   },
   "licenses": [
     {
       "type": "MIT"
     }
   ],
-  "files": [
-    ""
-  ],
-  "keywords":[
-  ],
   "dependencies": {
-    "express": "3.x"
+    "express": "3.x",
+    "aws-sdk": "2.x.x"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.7.0",

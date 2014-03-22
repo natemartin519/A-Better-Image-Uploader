@@ -3,12 +3,7 @@
 Yo it's Node uploading images!
 
 ## Getting Started
-Install the module with: `npm install image-uploader`
-
-```javascript
-var image-uploader = require('image-uploader');
-image-uploader.awesome(); // "awesome"
-```
+_(Coming soon)_
 
 ## Documentation
 _(Coming soon)_
