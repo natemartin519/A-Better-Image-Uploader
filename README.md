@@ -1,6 +1,6 @@
 # Image Uploader [![Build Status](https://secure.travis-ci.org/natemartin519/image-uploader.png?branch=master)](http://travis-ci.org/natemartin519/image-uploader)
 
-Yo it's Node uploading images!
+Yo it's Node uploading images to S3!
 
 ## Getting Started
 _(Coming soon)_
