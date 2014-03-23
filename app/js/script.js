@@ -49,6 +49,8 @@ $(function() {
         }).done(function(response) {
             updateImageList();
             $form.reset();
+        }).fail(function(response) {
+            // alert user
         });
     });
 });
