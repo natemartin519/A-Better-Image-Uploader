@@ -35,7 +35,8 @@ $(function() {
             updateImageList();
             $form.reset();
         }).fail(function(response) {
-            // alert user
+            console.log('Unable to upload image.'); // Placeholder
+            $form.reset();
         });
     });
 
@@ -48,9 +49,8 @@ $(function() {
             type: 'DELETE'
         }).done(function(response) {
             updateImageList();
-            $form.reset();
         }).fail(function(response) {
-            // alert user
+            console.log('Unable to delete image.'); // Placeholder
         });
     });
 });

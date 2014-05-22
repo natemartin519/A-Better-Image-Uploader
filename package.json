@@ -18,6 +18,10 @@
   ],
   "dependencies": {
     "express": "3.x",
+    "passport": "0.2.x",
+    "passport-twitter": "1.x.x",
+    "passport-facebook": "1.x.x",
+    "passport-google-oauth": "0.1.x",
     "aws-sdk": "2.x.x"
   },
   "devDependencies": {
